@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa5e776-929e-4306-b76e-722ee7cc42f7" name="Changes" comment="First Commit">
+    <list default="true" id="9aa5e776-929e-4306-b76e-722ee7cc42f7" name="Changes" comment="4th comitt">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DemoGame/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DemoGame/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DemoGame/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DemoGame/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/b.tech/java_Practice"
+    "last_opened_file_path": "C:/Users/hp/Desktop/Brick-Breaker-Game-master"
   }
 }]]></component>
   <component name="RunManager">
@@ -75,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675933414276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="4th comitt">
+      <created>1675938465366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675938465366</updated>
+    </task>
+    <task id="LOCAL-00003" summary="4th comitt">
+      <created>1675938846365</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675938846365</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +109,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="4th comitt" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th comitt" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Brick_Breaker$MainClass.ic" NAME="MainClass Coverage Results" MODIFIED="1675958144224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>DemoGame.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -21,6 +21,8 @@ public class GamePlay extends JPanel implements ActionListener, KeyListener {
     private int ballXdir=-1;
     private int ballYdir=-2;
     private int playerX=350;
+
+    //Constructor
     public GamePlay(){
         addKeyListener(this);
         setFocusable(true);
@@ -51,23 +53,46 @@ public class GamePlay extends JPanel implements ActionListener, KeyListener {
         g.fillOval(ballposX,ballposY,20,20);
 
     }
+    private void moveLeft() {
+        playerX-=20;
+    }
+    private void moveRight() {
+        playerX+=20;
+    }
+
+
+//here we are checking user is pressing which key --left or right
+    public void keyPressed(KeyEvent e){
+        if(e.getKeyCode()==KeyEvent.VK_LEFT){
+            if(playerX<=0)
+                playerX=0;
+            else
+            moveLeft();
+        }
+        if(e.getKeyCode()==KeyEvent.VK_RIGHT){
+            if(playerX>=600)
+                playerX=600;
+            else
+                moveRight();
+        }
+        //my ball is not moving so i m doing repaint
+        repaint();
+
+    }
+
+
+
 
     @Override
-    public void keyTyped(KeyEvent e) {
+    public void actionPerformed(ActionEvent e) {
 
     }
-
-    public void keyPressed(KeyEvent args){
-
-    }
-
     @Override
     public void keyReleased(KeyEvent e) {
 
     }
-
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void keyTyped(KeyEvent e) {
 
     }
 
