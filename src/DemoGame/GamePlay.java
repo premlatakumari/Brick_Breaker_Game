@@ -77,7 +77,7 @@ public class GamePlay extends JPanel implements ActionListener, KeyListener {
             else
                 moveRight();
         }
-        //my ball is not moving so i m doing repaint
+        //my ball is not moving so i m doing repaintt
         repaint();
 
     }
