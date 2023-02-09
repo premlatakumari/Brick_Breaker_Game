@@ -29,8 +29,6 @@ public class GamePlay extends JPanel implements ActionListener, KeyListener {
         setFocusTraversalKeysEnabled(true);
         timer=new Timer(delay,this);
         timer.start();
-
-
     }
     public void paint(Graphics g)
     {
@@ -40,9 +38,11 @@ public class GamePlay extends JPanel implements ActionListener, KeyListener {
 
         //border
         g.setColor(Color.yellow);
-        g.fillRect(0,0,692,3);
-        g.fillRect(0,3,3,3);
-        g.fillRect(691,3,3,592);
+        g.fillRect(0, 0, 3, 592); //creating left yellow line
+       g.fillRect(0, 0, 692, 3); //upper line
+
+        g.fillRect(691, 0, 3, 592);
+
 
         //paddle
         g.setColor(Color.green);
@@ -54,20 +54,22 @@ public class GamePlay extends JPanel implements ActionListener, KeyListener {
 
     }
     private void moveLeft() {
+        //If i willl press left then my left will be true
+        play=true;
         playerX-=20;
     }
     private void moveRight() {
+        //if i will press Right then play will be true;
+        play=true;
         playerX+=20;
     }
-
-
 //here we are checking user is pressing which key --left or right
     public void keyPressed(KeyEvent e){
         if(e.getKeyCode()==KeyEvent.VK_LEFT){
-            if(playerX<=0)
-                playerX=0;
+            if(playerX<=10)
+                playerX=10;
             else
-            moveLeft();
+                moveLeft();
         }
         if(e.getKeyCode()==KeyEvent.VK_RIGHT){
             if(playerX>=600)
@@ -82,9 +84,32 @@ public class GamePlay extends JPanel implements ActionListener, KeyListener {
 
 
 
-
+   //Here i am writing code to move the ball
     @Override
     public void actionPerformed(ActionEvent e) {
+        //if play will be true
+        if(play){
+            if (ballposX < 0) {
+                ballXdir = -ballXdir;
+            }
+            if (ballposY < 0) {
+                ballYdir = -ballYdir;
+            }
+            if (ballposX > 670) {
+                ballXdir = -ballXdir;
+            }
+
+            Rectangle ballRect=new Rectangle(ballposX,ballposY,20,20);
+            Rectangle paddleRect=new Rectangle(playerX,550,100,8);
+            if(ballRect.intersects(paddleRect))
+            {
+                ballYdir=-ballYdir;
+            }
+            ballposX+=ballXdir;
+            ballposY+=ballYdir;
+
+        }
+        repaint();
 
     }
     @Override

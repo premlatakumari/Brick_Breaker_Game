@@ -8,6 +8,7 @@ public class MainClass {
         GamePlay gamePlay=new GamePlay();
         f.setTitle("Brick Breaker");
         f.setSize(700,600);
+
         f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
