@@ -11,8 +11,8 @@ public class MainClass {
         f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
-        f.setResizable(false);
+        f.setResizable(true);
         f.add(gamePlay);
-
+//
     }
 }
