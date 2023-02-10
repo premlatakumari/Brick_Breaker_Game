@@ -4,6 +4,7 @@ import  javax.swing.JFrame;
 public class MainClass {
     public static void main(String[] args) {
         //making object of JFrame
+
         JFrame f=new JFrame();
         GamePlay gamePlay=new GamePlay();
         f.setTitle("Brick Breaker");
@@ -14,6 +15,6 @@ public class MainClass {
         f.setVisible(true); //
         f.setResizable(false);
         f.add(gamePlay);
-//
+
     }
 }

@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9aa5e776-929e-4306-b76e-722ee7cc42f7" name="Changes" comment="ball is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DemoGame/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DemoGame/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DemoGame/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DemoGame/MainClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/hp/Desktop/Brick-Breaker-Game-master"
+    "last_opened_file_path": "E:/b.tech/java_Practice"
   }
 }]]></component>
   <component name="RunManager">
@@ -103,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675963855878</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ball is done">
+      <created>1675964019349</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675964019349</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
